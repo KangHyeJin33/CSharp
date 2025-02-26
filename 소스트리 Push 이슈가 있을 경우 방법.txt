@@ -1,1 +1,0 @@
-Push -> manager -> 선택 -> 로그인 -> manager -> 선택 -> Push완료
