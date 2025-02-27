@@ -1,18 +1,12 @@
 using UnityEngine;
 
-public class Hello : MonoBehaviour
+public class Varlab : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("Hello Unity!!!");
-        Debug.Log("123456789");
+        int num = 7; //[1] 변수 선언과 동시에 값 대입(초기화)하기.
+        Debug.Log(num);
     }
-  
-}
 
-/*
- [output]
-Hello Unity!!!
-123456789
-*/
+}
