@@ -12,6 +12,10 @@ public class Varirable : MonoBehaviour
         Debug.Log("첫번째 숫자 : " + first + "\n");
         Debug.Log("두번째 숫자 : " + second + "\n");
         Debug.Log("세번째 숫자 : " + third + "\n");
+
+        
+      //Debug.Log(first + "," + second + "," + third); -> 한 줄로 출력 가능
+        
     }
 
 }
