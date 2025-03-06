@@ -27,6 +27,6 @@ public class SequenceDemo : MonoBehaviour
 : 프로그램의 흐름(순서)를 정하는 구문.
 - 종류
 1. 순차문 : 위에서 아래로 순서대로 명령문을 실행. (ex. 선언 -> 출력) 
-2. 조건문 : 
-3. 반복문
+2. 조건문 (if, else if, switch) 
+3. 반복문 (for, while..)
  */
