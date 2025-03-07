@@ -5,9 +5,9 @@ public class DouDnd : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        double pi = 3.141592; // (64 Bit) 실수형 데이터 형식 선언하고 초기화.
-        float f = 3.14f; // (32 Bit) 실수형 데이터 형식 선언하고 초기화.
-        decimal d = 12.34m; // (128 Bit) 실수형 데이터 형식 선언하고 초기화.
+        //double pi = 3.141592; // (64 Bit) 실수형 데이터 형식 선언하고 초기화.
+        //float f = 3.14f; // (32 Bit) 실수형 데이터 형식 선언하고 초기화.
+        //decimal d = 12.34m; // (128 Bit) 실수형 데이터 형식 선언하고 초기화.
 
         //Debug.Log(pi);
         //Debug.Log(f);
