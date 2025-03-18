@@ -6,14 +6,14 @@ public class ArrayListDemo : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //[1] ArrayList Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º(°´Ã¼, °³Ã¼) »ı¼º
+        //[1] ArrayList í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤(ê°ì²´, ê°œì²´) ìƒì„±
         ArrayList list = new ArrayList();
 
-        //[2] µ¥ÀÌÅÍ ÀúÀå : Add()
-        list.Add("¼­¿ïÆ¯º°½Ã");
-        list.Add("°­µ¿±¸");
+        //[2] ë°ì´í„° ì €ì¥ : Add()
+        list.Add("ì„œìš¸íŠ¹ë³„ì‹œ");
+        list.Add("ê°•ë™êµ¬");
 
-        //[3] µ¥ÀÌÅÍ »ç¿ë
+        //[3] ë°ì´í„° ì‚¬ìš©
         for (int i = 0; i < list.Count; i++)
         {
             Debug.Log(list[i].ToString());
@@ -23,8 +23,8 @@ public class ArrayListDemo : MonoBehaviour
 }
 
 /*
-ArrayList Å¬·¡½º : ¹è¿­Ã³·³ »ç¿ëÀÌ °¡´É(ÀÎµ¦½º ÀÌ¿ë)
+ArrayList í´ë˜ìŠ¤ : ë°°ì—´ì²˜ëŸ¼ ì‚¬ìš©ì´ ê°€ëŠ¥(ì¸ë±ìŠ¤ ì´ìš©)
 
-Add() µ¥ÀÌÅÍ ³Ö±â
+Add() ë°ì´í„° ë„£ê¸°
 
  */
