@@ -1,47 +1,47 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-//ÁßÃ¸ ±¸Á¶Ã¼ : ±¸Á¶Ã¼ ¾È¿¡ ±¸Á¶Ã¼
-// ¼ºÀûÀ» °ü¸®ÇÏ´Â ±¸Á¶Ã¼ ±¸Çö.
+//ì¤‘ì²© êµ¬ì¡°ì²´ : êµ¬ì¡°ì²´ ì•ˆì— êµ¬ì¡°ì²´
+// ì„±ì ì„ ê´€ë¦¬í•˜ëŠ” êµ¬ì¡°ì²´ êµ¬í˜„.
 
-// °ú¸ñÀÇ Á¡¼ö¸¦ °ü¸®ÇÏ´Â ±¸Á¶Ã¼ ¼±¾ğ.
+// ê³¼ëª©ì˜ ì ìˆ˜ë¥¼ ê´€ë¦¬í•˜ëŠ” êµ¬ì¡°ì²´ ì„ ì–¸.
 struct Score
 {
-    public int kor; // ±¹¾î Á¡¼ö
-    public int eng; // ¿µ¾î Á¡¼ö
+    public int kor; // êµ­ì–´ ì ìˆ˜
+    public int eng; // ì˜ì–´ ì ìˆ˜
 }
 
-// ÇĞ»ı Á¤º¸¸¦ °ü¸®ÇÏ´Â ±¸Á¶Ã¼ ¼±¾ğ - ¼ºÀûÆ÷ÇÔ.
+// í•™ìƒ ì •ë³´ë¥¼ ê´€ë¦¬í•˜ëŠ” êµ¬ì¡°ì²´ ì„ ì–¸ - ì„±ì í¬í•¨.
 struct Student
 {
-    public int number; // ÇĞ»ı ¹øÈ£
-    public string name; // ÇĞ»ı ÀÌ¸§
-    public Score scores; // °ú¸ñ Á¡¼ö - Score ±¸Á¶Ã¼ : ÁßÃ¸ ±¸Á¶Ã¼.
+    public int number; // í•™ìƒ ë²ˆí˜¸
+    public string name; // í•™ìƒ ì´ë¦„
+    public Score scores; // ê³¼ëª© ì ìˆ˜ - Score êµ¬ì¡°ì²´ : ì¤‘ì²© êµ¬ì¡°ì²´.
 }
 public class StruncTestFrom : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //[1] ±¸Á¶Ã¼ º¯¼ö ¼±¾ğ ¹× ¿ä¼Ò¼ö(Å©±â) »ı¼º
-        Student[] students = new Student[3]; // ±¸Á¶Ã¼º¯¼öÀÇ ÇĞ»ıÀÎ¿ø¸¸Å­ ¹æ »ı¼º.
-        //[2] ÇĞ»ı ±¸Á¶Ã¼ µ¥ÀÌÅÍ ÃÊ±âÈ­
+        //[1] êµ¬ì¡°ì²´ ë³€ìˆ˜ ì„ ì–¸ ë° ìš”ì†Œìˆ˜(í¬ê¸°) ìƒì„±
+        Student[] students = new Student[3]; // êµ¬ì¡°ì²´ë³€ìˆ˜ì˜ í•™ìƒì¸ì›ë§Œí¼ ë°© ìƒì„±.
+        //[2] í•™ìƒ êµ¬ì¡°ì²´ ë°ì´í„° ì´ˆê¸°í™”
         students[0].number = 1;
-        students[0].name = "È«±æµ¿";
+        students[0].name = "í™ê¸¸ë™";
         students[0].scores.kor = 100;
         students[0].scores.eng = 90;
         students[1].number = 2;
-        students[1].name = "¹éµÎ»ê";
+        students[1].name = "ë°±ë‘ì‚°";
         students[1].scores.kor = 90;
         students[1].scores.eng = 80;
         students[2].number = 3;
-        students[2].name = "ÀÓ²©Á¤";
+        students[2].name = "ì„êº½ì •";
         students[2].scores.kor = 90;
         students[2].scores.eng = 75;
-        //[3] ÇĞ»ı ±¸Á¶Ã¼ »ç¿ë - ¼ºÀûÇ¥ Ãâ·Â
-        for (int i = 0; i < students.Length; i++) // Length : ±æÀÌ
+        //[3] í•™ìƒ êµ¬ì¡°ì²´ ì‚¬ìš© - ì„±ì í‘œ ì¶œë ¥
+        for (int i = 0; i < students.Length; i++) // Length : ê¸¸ì´
         {
-            Debug.Log($"{students[i].number} - {students[i].name} : ±¹¾î {students[i].scores.kor}Á¡, ¿µ¾î{students[i].scores.eng}Á¡.");
+            Debug.Log($"{students[i].number} - {students[i].name} : êµ­ì–´ {students[i].scores.kor}ì , ì˜ì–´{students[i].scores.eng}ì .");
         }
 
     }

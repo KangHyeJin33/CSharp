@@ -6,6 +6,7 @@ using UnityEngine; // UnityEngine 네임스페이스에 있는 클래스를 가�
 //NameSpace(네임스페이스)
 //1. 클래스 등(enum, strunk - 사용자 정의 형식) 들을 서로 관련 있는 (비슷한 기능) 것들끼리 묶어서 관리
 //2. 같은 이름의 충돌을 방지
+//3. 같은 네임스페이스 안에서는 다른 클래스를 네임스페이스 없이 사용이 가능
 
 public class NameSpaceDescription : MonoBehaviour
 {
