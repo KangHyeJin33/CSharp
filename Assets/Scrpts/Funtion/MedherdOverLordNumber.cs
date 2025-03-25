@@ -1,32 +1,46 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 
-// MethodOverlord(¸Ş¼­µå ¿À¹ö·Îµå, ÇÔ¼ö ´ÙÁß Á¤ÀÇ)
-// ¶æ : ÇÏ³ªÀÇ ÀÌ¸§À¸·Î(µ¿ÀÏÇÑ ÀÌ¸§) ¸Ş¼­µå¸¦ ¸Å°³ º¯¼ö¸¦ ´Ş¸®ÇØ¼­ ¿©·¯°³ »ı¼ºÇÏ´Â°Í.
+// MethodOverlord(ë©”ì„œë“œ ì˜¤ë²„ë¡œë“œ, í•¨ìˆ˜ ë‹¤ì¤‘ ì •ì˜)
+// ëœ» : í•˜ë‚˜ì˜ ì´ë¦„ìœ¼ë¡œ(ë™ì¼í•œ ì´ë¦„) ë©”ì„œë“œë¥¼ ë§¤ê°œ ë³€ìˆ˜ë¥¼ ë‹¬ë¦¬í•´ì„œ ì—¬ëŸ¬ê°œ ìƒì„±í•˜ëŠ”ê²ƒ.
 public class MedherdOverLordNumber : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        PrintNumber(1234); // Á¤¼öÇü
-        PrintNumber(1234L); // longÇüÀÇ Á¤¼öÇü
-        PrintNumber(1234F); // floatÇüÀÇ ½Ç¼öÇü
+        /*PrintNumber(1234); // ì •ìˆ˜í˜•
+        PrintNumber(1234L); // longí˜•ì˜ ì •ìˆ˜í˜•
+        PrintNumber(1234F); // floatí˜•ì˜ ì‹¤ìˆ˜í˜•*/
+
+        //Cup<T> : ì»µì–´ë¸Œí‹°, ì „ìš© ì»µ.
+        PrintNumber<int>(1234);
+        PrintNumber<long>(1234L);
+        PrintNumber<float>(1234F);
+        PrintNumber<double>(3.14);
     }
 
-    // ¸Å°³º¯¼ö·Î ¼ıÀÚ¸¦ ÀÔ·Â¹Ş¾Æ Ãâ·ÂÇÏ´Â ÇÔ¼ö(PrintNumber).
-    // int Å¸ÀÔÀÇ Á¤¼ö¸¦ ¸Å°³º¯¼ö·Î ÀÔ·Â¹Ş¾Æ Ãâ·Â.(void PrintNumber(int number))
+    //ì œë„¤ë¦­ ë©”ì„œë“œ. Cup<T> : ì»µì–´ë¸Œí‹°, ì „ìš© ì»µ.
+    void PrintNumber<T>(T number)
+    {
+        Debug.Log($"{number}");
+    }
+
+
+    // ë§¤ê°œë³€ìˆ˜ë¡œ ìˆ«ìë¥¼ ì…ë ¥ë°›ì•„ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜(PrintNumber).
+    // int íƒ€ì…ì˜ ì •ìˆ˜ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ì…ë ¥ë°›ì•„ ì¶œë ¥.(void PrintNumber(int number))
     void PrintNumber(int number)
     {
         Debug.Log($"Int32 : {number}");
     }
-    //long Å¸ÀÔÀÇ Á¤¼ö¸¦ ¸Å°³º¯¼ö·Î ÀÔ·Â¹Ş¾Æ Ãâ·Â.
+    //long íƒ€ì…ì˜ ì •ìˆ˜ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ì…ë ¥ë°›ì•„ ì¶œë ¥.
     void PrintNumber(long number)
     {
         Debug.Log($"Int64 : {number}");
     }
-    //float Å¸ÀÔÀÇ ½Ç¼ö¸¦ ¸Å°³º¯¼ö·Î ÀÔ·Â¹Ş¾Æ Ãâ·Â.
+    //float íƒ€ì…ì˜ ì‹¤ìˆ˜ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ì…ë ¥ë°›ì•„ ì¶œë ¥.
     void PrintNumber(float number)
     {
-        Debug.Log($"½Ç¼öÇü : {number}");
+        Debug.Log($"ì‹¤ìˆ˜í˜• : {number}");
     }
 }
